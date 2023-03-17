@@ -13,7 +13,7 @@ function App() {
     console.log(data);
   },[])
   return (
-    <>
+    <div>
      {/* <Navbar search={search}/> */}
      <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -38,7 +38,7 @@ function App() {
 </div>
      
 
-        <div className="container d-flex flex-row flex-wrap gap-4 mt-3">
+        <div className="d-flex flex-row flex-wrap gap-4 mt-3 mx-auto">
           {
             data.filter((val)=>{
               return val.name.toLowerCase().includes(search.toLowerCase());
@@ -48,7 +48,7 @@ function App() {
           )) }
         </div>
       
-    </>
+    </div>
   )
 }
 
